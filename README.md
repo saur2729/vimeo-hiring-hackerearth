@@ -36,7 +36,7 @@ I have built the as per the level 1 requirements in react(this is kind of practi
 
 ### Live
 Working link here -
-[a link](http://saur2729.github.io/vimeo-hiring-hackerearth)
+[Live link](http://saur2729.github.io/vimeo-hiring-hackerearth)
 
 PS - Since while publishing it to github, I was getting error like -
  > react was loaded over HTTPS, but requested an insecure resource 'http://starlord.hackerearth.com/bankAccount'. This request has been blocked; the content must be served over HTTPS.
