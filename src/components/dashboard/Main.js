@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useCallback} from 'react'
+import React, {useState, useEffect} from 'react'
 
 import './main.css';
 
@@ -6,13 +6,28 @@ import './main.css';
 export default function Main() {
   const [apiData, setapiData] = useState([]);
   const [pageNumber, setpageNumber] = useState(1);
+  // uncomment the below useEffect function till stop in order to use the api directly
+  // while publishing it to github pages this call was not working coz of http v/s https security issue
+  // so I have used a lcoal file json file in order to get the values and work.
+  // In general practice, you will have access to the api and one should directly work with api only.
 
+  // useEffect(() => {
+  //   async function fetchRecords() {
+  //     const response = await fetch("http://starlord.hackerearth.com/bankAccount");
+  //     const json = await response.json();
+  //     setapiData(json.reverse())
+  //     //setapiData(json.sort((a, b) => (parseDate(a.Date) > parseDate(b.Date)) ? -1 : 1))
+  //   }
+  //   fetchRecords();
+  // }, [])
+
+  // This function is using local file to fetch the json data. This was done as while publishing the react app
+  // to github, we were not able to fetch the data directly from the api call.
+  // Comment it in case you are using the above function for api call. Either of one should be used.
   useEffect(() => {
     async function fetchRecords() {
-      const response = await fetch("http://starlord.hackerearth.com/bankAccount");
-      const json = await response.json();
-      setapiData(json.reverse())
-      //setapiData(json.sort((a, b) => (parseDate(a.Date) > parseDate(b.Date)) ? -1 : 1))
+      const response = require('./api-data.json')
+      setapiData(response.reverse())
     }
     fetchRecords();
   }, [])
