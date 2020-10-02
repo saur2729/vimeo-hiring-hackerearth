@@ -34,6 +34,39 @@ I have built the as per the level 1 requirements in react(this is kind of practi
  -- install the dependencies with `npm install`
  -- run the project with `npm start`
 
+### Live
+Working link here -
+[a link](http://saur2729.github.io/vimeo-hiring-hackerearth)
+
+PS - Since while publishing it to github, I was getting error like -
+ > react was loaded over HTTPS, but requested an insecure resource 'http://starlord.hackerearth.com/bankAccount'. This request has been blocked; the content must be served over HTTPS.
+
+In order to overcome this, I have used a local json file with api data and Im fetching records from the same file instead of fetching it from the url.
+
+One can use the url to fetch it using the api call when using locally by uncommenting the following piece of code in src/components/dashboard/Main.js -
+```
+  // useEffect(() => {
+  //   async function fetchRecords() {
+  //     const response = await fetch("http://starlord.hackerearth.com/bankAccount");
+  //     const json = await response.json();
+  //     setapiData(json.reverse())
+  //     //setapiData(json.sort((a, b) => (parseDate(a.Date) > parseDate(b.Date)) ? -1 : 1))
+  //   }
+  //   fetchRecords();
+  // }, [])
+```
+
+and commenting out the immediate below code in src/components/dashboard/Main.js
+```
+  useEffect(() => {
+    async function fetchRecords() {
+      const response = require('./api-data.json')
+      setapiData(response.reverse())
+    }
+    fetchRecords();
+  }, [])
+```
+
 ### Results
 ![Alt text](public/vimeo-pg1.png?raw=true "Page 1 display")
 ![Alt text](public/vimeo-pg4.png?raw=true "Page 4 display")

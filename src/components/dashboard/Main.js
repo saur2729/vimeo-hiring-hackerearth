@@ -6,6 +6,7 @@ import './main.css';
 export default function Main() {
   const [apiData, setapiData] = useState([]);
   const [pageNumber, setpageNumber] = useState(1);
+
   // uncomment the below useEffect function till stop in order to use the api directly
   // while publishing it to github pages this call was not working coz of http v/s https security issue
   // so I have used a lcoal file json file in order to get the values and work.
@@ -20,6 +21,7 @@ export default function Main() {
   //   }
   //   fetchRecords();
   // }, [])
+
 
   // This function is using local file to fetch the json data. This was done as while publishing the react app
   // to github, we were not able to fetch the data directly from the api call.
