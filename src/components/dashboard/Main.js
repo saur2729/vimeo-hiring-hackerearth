@@ -9,7 +9,7 @@ export default function Main() {
 
   useEffect(() => {
     async function fetchRecords() {
-      const response = await fetch("https://starlord.hackerearth.com/bankAccount");
+      const response = await fetch("http://starlord.hackerearth.com/bankAccount");
       const json = await response.json();
       setapiData(json.reverse())
       //setapiData(json.sort((a, b) => (parseDate(a.Date) > parseDate(b.Date)) ? -1 : 1))
