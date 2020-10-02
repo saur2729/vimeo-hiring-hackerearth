@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# vimeo-fullstack-dev-hiring-challenge
 
-## Available Scripts
+Vimeo hosted a hiring challenge on hackerearth on 21 March'20. A problem statement was provided as mentioned below for the hiring challenge and the tech-stack we could use were HTML, CSS with ReactJS/AngularJS
 
-In the project directory, you can run:
+### Hiring challenge details!
+** I'm sharing the details here because it was an open contest for all.
 
-### `npm start`
+[Problem Statement]
+Develop a frontend application which would display account and transaction details fo a user.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Minimum Requirement] (Level 1)
+  - Use of web API to fetch account details
+  - visually interactive design to list details
+  - Implement pagination on the frontend. Display 10 records max in a page.
+  - Zip all your SOurce code, Screenshots & detailed deployment instructions and upload
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+[Intermediate] (Level 2)
+  - Implement a search functionality to search transaction details for a particular recipient.
+  - Implement Sort on the frontend based on Date, Value date, Balance AMT.
 
-### `npm test`
+[Bonus points]
+  - Implement charts, pie-charts, other visualization displaying different transaction patterns across time
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Guide]
+  - Bank account API : http://starlord.hackerearth.com/bankAccount
+  - Tech Stack: HTML, CSS with ReactJS or AngularJS
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Solution
+I have built the as per the level 1 requirements in react(this is kind of practice for me as I'm still new to ReactJS). The code for table and pagnation implementation was written from scratch and no external libraries were used for it(and yeah it took a lot of time :| )
+ -- clone the repo with `git clone`
+ -- change your current work directory with `cd </path/to/clone-folder-name>`
+ -- install the dependencies with `npm install`
+ -- run the project with `npm start`
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Results
+![Alt text](public/vimeo-pg1.png?raw=true "Page 1 display")
+![Alt text](public/vimeo-pg4.png?raw=true "Page 4 display")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Todos
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ - Complete Level 2 and Level 3
+ - Implememnt charts using charts.js or any recommened open source Library
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+License
+----
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+MIT
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+**Free Software, Hell Yeah!**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
