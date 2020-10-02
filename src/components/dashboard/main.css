@@ -1,0 +1,32 @@
+table {
+  width: 100%;
+  overflow-x: auto;
+}
+ td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: right;
+}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tr:hover {
+  background-color: #ddd;
+}
+
+.tablePagination {
+  font-size: x-small;
+  color: rgb(62, 49, 240);
+}
+.button {
+  padding: 0;
+  border: none;
+  background: none;
+}
