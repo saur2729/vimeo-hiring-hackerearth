@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/vimeo-hiring-hackerearth/precache-manifest.cdc07c8e77853a4ba917463168ac78a7.js"
+  "/vimeo-hiring-hackerearth/precache-manifest.050209431794aea3e91cace0988bb10b.js"
 );
 
 self.addEventListener('message', (event) => {
